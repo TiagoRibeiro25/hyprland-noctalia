@@ -69,6 +69,22 @@ hl.window_rule({
     float = true,
     size = { "max(monitor_w, monitor_h)*0.50", "min(monitor_w, monitor_h)*0.55" },
 })
+hl.window_rule({
+    match = {
+        class = "^(org.gnome.eog)$",
+        title = "negative:^(Open.*|Properties.*|Choose\\sApplication.*)$",
+    },
+    float = true,
+    size = { "max(monitor_w, monitor_h)*0.50", "min(monitor_w, monitor_h)*0.55" },
+})
+hl.window_rule({
+    match = {
+        class = "^(vlc)$",
+        title = "negative:^(Open.*|Properties.*|Choose\\sApplication.*)$",
+    },
+    float = true,
+    size = { "max(monitor_w, monitor_h)*0.50", "min(monitor_w, monitor_h)*0.55" },
+})
 
 -- Float Utility Windows
 local floatApps = {
