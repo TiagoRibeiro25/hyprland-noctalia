@@ -128,3 +128,16 @@ hl.window_rule({
     },
     idle_inhibit = "fullscreen",
 })
+
+hl.window_rule({
+    match = { class = '^(BongoCat.x86_64)$' },
+
+    float = true,
+    pin = true,
+    size = { 'monitor_w', 'monitor_h' },
+
+    opaque = true,
+    decorate = false,
+    no_blur = true,
+    no_shadow = true
+})
