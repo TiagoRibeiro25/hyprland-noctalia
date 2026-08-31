@@ -56,19 +56,19 @@ hl.window_rule({
     },
     float = true,
     size = { "max(monitor_w, monitor_h)*0.50", "min(monitor_w, monitor_h)*0.55" },
-    move = {
-        "max(20, min(cursor_x - (window_w*0.50), monitor_w - window_w + 20))", -- X axis clamping
-        "max(20, min(cursor_y - 50, monitor_h - window_h + 20))" -- Y axis clamping
-    },
+    -- move = {
+    --     "max(20, min(cursor_x - (window_w*0.50), monitor_w - window_w + 20))", -- X axis clamping
+    --     "max(20, min(cursor_y - 50, monitor_h - window_h + 20))" -- Y axis clamping
+    -- },
 })
-
--- Opacity Overrides
-local terminals = "^(kitty|ghostty|[Kk]onsole|Alacritty|gnome-terminal|xfce[0-9]?-terminal)$"
-
-hl.window_rule({ match = { class = "^(firefox|zen)$" }, opacity = "1.0 override" })
-hl.window_rule({ match = { class = terminals }, opacity = "1.0 override" }) -- Override opacity in favor of terminal settings for opacity. If your terminal doesn't support transparency, you can remove this rule.
-hl.window_rule({ match = { class = "^(mpv|org.kde.haruna|.*plex.*|org\\.kde\\.gwenview|.*vlc.*)$" }, opacity = "1.0 override" })
-
+hl.window_rule({
+    match = {
+        class = "^(org\\.kde\\.ark)$",
+        title = "negative:^(Extract.*|Compress.*|Properties.*|Choose\\sApplication.*)$",
+    },
+    float = true,
+    size = { "max(monitor_w, monitor_h)*0.50", "min(monitor_w, monitor_h)*0.55" },
+})
 
 -- Float Utility Windows
 local floatApps = {
