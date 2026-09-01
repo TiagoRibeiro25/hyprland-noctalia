@@ -87,7 +87,10 @@ hl.window_rule({
 })
 
 -- Float Utility Windows
-local floatApps = {
+local floatApps = 
+{
+    { class = "^(org.keepassxc.KeePassXC)$" },
+    { class = "^(steam)$" },
     { class = "^(kvantummanager|qt[56]ct|nwg-look)$" },
     { class = "^(org.pulseaudio.pavucontrol|blueman-manager|nm-applet|nm-connection-editor)$" },
     { title = "^(Winetricks.*|Protontricks.*)$" },
