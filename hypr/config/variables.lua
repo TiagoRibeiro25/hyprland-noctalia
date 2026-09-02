@@ -1,9 +1,9 @@
 -- Hyprland default apps
 
-TERMINAL     = "ghostty"
+TERMINAL     = "ghostty --gtk-single-instance=true"
 FILE_MANAGER = "dolphin"
 BROWSER      = "firefox"
-EDITOR       = "gnome-text-editor --new-window"
+EDITOR       = "kate --new-window"
 CALCULATOR   = "gnome-calculator"
 
 -- Monitors
