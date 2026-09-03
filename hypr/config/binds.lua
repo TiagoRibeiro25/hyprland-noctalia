@@ -124,7 +124,7 @@ hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(noctCall .. "panel-toggle wal
 hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd(noctCall .. "panel-toggle clipboard"))
 
 -- Notifications
-hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center notifications"))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center notifications"))
 
 -------------------------------
 ---- WORKSPACES & MONITORS ----
