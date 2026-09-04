@@ -22,4 +22,4 @@ hl.env("MESA_SHADER_CACHE_MAX_SIZE", "20GB")
 
 hl.env("PROTON_USE_NTSYNC", "1")
 
-
+hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")

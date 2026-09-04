@@ -1,6 +1,6 @@
 -- Hyprland default apps
 
-TERMINAL     = "ghostty --gtk-single-instance=true"
+TERMINAL     = "foot"
 FILE_MANAGER = "dolphin"
 BROWSER      = "firefox"
 EDITOR       = "kate --new-window"
