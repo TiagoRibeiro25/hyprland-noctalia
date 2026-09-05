@@ -11,6 +11,8 @@ hl.env("__GL_GSYNC_ALLOWED", "1") -- Controls if G-Sync capable monitors should 
 
 hl.env("AQ_DRM_DEVICES", "/dev/dri/nvidia:/dev/dri/intel")
 
+hl.env("TERMINAL", "foot")
+
 hl.env("GTK_IM_MODULE", "simple")
 
 hl.env("MANGOHUD", "1")
@@ -21,5 +23,7 @@ hl.env("__GL_SHADER_DISK_CACHE_SKIP_CLEANUP", "1") -- Don't clean
 hl.env("MESA_SHADER_CACHE_MAX_SIZE", "20GB")
 
 hl.env("PROTON_USE_NTSYNC", "1")
+hl.env("PROTON_ENABLE_WAYLAND", "1")
+hl.env("PROTON_DISCORD_BRIDGE", "1")
 
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")

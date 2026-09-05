@@ -89,6 +89,8 @@ hl.window_rule({
 -- Float Utility Windows
 local floatApps = 
 {
+    { class = "^(org.cachyos.scx-manager)$" },
+    { class = "^(org.cachyos.hello)$" },
     { class = "^(org.keepassxc.KeePassXC)$" },
     { class = "^(steam)$" },
     { class = "^(kvantummanager|qt[56]ct|nwg-look)$" },
