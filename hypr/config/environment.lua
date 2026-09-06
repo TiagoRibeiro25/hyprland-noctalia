@@ -16,14 +16,13 @@ hl.env("TERMINAL", "foot")
 hl.env("GTK_IM_MODULE", "simple")
 
 hl.env("MANGOHUD", "1")
-hl.env("MANGOHUD_CONFIG", "no_display,fps_limit=120")
+-- hl.env("MANGOHUD_CONFIG", "no_display,fps_limit=120")
 
 hl.env("__GL_SHADER_DISK_CACHE_SIZE", "21474836480") -- 20GB
 hl.env("__GL_SHADER_DISK_CACHE_SKIP_CLEANUP", "1") -- Don't clean
 hl.env("MESA_SHADER_CACHE_MAX_SIZE", "20GB")
 
 hl.env("PROTON_USE_NTSYNC", "1")
-hl.env("PROTON_ENABLE_WAYLAND", "1")
 hl.env("PROTON_DISCORD_BRIDGE", "1")
 
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
